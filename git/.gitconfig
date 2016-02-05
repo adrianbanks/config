@@ -1,0 +1,31 @@
+[user]
+    name = Adrian Banks
+    email = 
+[core]
+    autocrlf = true
+[alias]
+    co = "!f(){ git checkout $1; }; f"
+    cob = "!f(){ git checkout -b $1; }; f"
+  com = checkout master
+    graph = log --pretty=oneline --abbrev-commit --branches=* --graph --decorate --all --date-order
+    locate = "!f(){ git branch --all --contains $1; }; f"
+  rhm = reset --hard origin/master
+    rh = "!f(){ git reset --hard; git clean -f; }; f"
+    ru = remote update --prune
+    st = status
+    statis = status
+    su = submodule update --init --recursive
+    whereis = "!f(){ git branch --all --contains $1; }; f"
+[diff]
+    ignoreSubmodules = dirty
+    tool = kdiff3
+    guitool = kdiff3
+[rerere]
+    enabled = true
+    autoupdate = true
+[help]
+    autocorrect = 1
+[color]
+    ui = 1
+[merge]
+    tool = kdiff3

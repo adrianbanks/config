@@ -9,6 +9,7 @@
     com = checkout master
     graph = log --pretty=oneline --abbrev-commit --branches=* --graph --decorate --all --date-order
     locate = "!f(){ git branch --all --contains $1; }; f"
+    rc = rebase --continue
     rhm = reset --hard origin/master
     rh = "!f(){ git reset --hard; git clean -f; }; f"
     ru = remote update --prune

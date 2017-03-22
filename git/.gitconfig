@@ -14,6 +14,7 @@
     rh = "!f(){ git reset --hard; git clean -f; }; f"
     ru = remote update --prune
     st = status
+    standup = log --pretty=format:'%C(yellow)%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday
     statis = status
     su = submodule update --init --recursive
     whereis = "!f(){ git branch --all --contains $1; }; f"

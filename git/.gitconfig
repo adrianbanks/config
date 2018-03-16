@@ -4,6 +4,7 @@
 [core]
     autocrlf = true
 [alias]
+    ca = commit --amend
     co = "!f(){ git checkout $1; }; f"
     cob = "!f(){ git checkout -b $1; }; f"
     com = checkout master
@@ -11,7 +12,12 @@
     graph-with-time-ago = -c core.pager='less -SRF' log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     graph-message-on-separate-line = -c core.pager='less -SRF' log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
     locate = "!f(){ git branch --all --contains $1; }; f"
-   	non-merged-branches = "!f(){ git branch -r --no-merged $1; }; f"
+    locate-tag = "!f(){ git tag --contains $1; }; f"
+    ma = merge --abort
+    merged-branches = "!f(){ git branch --merged $1; }; f"
+    mnff = "!f(){ git merge --no-ff $1; }; f"
+    non-merged-branches = "!f(){ git branch --no-merged $1; }; f"
+    ra = rebase --abort
     rc = rebase --continue
     rhm = reset --hard origin/master
     rh = "!f(){ git reset --hard; git clean -f; }; f"

@@ -4,6 +4,7 @@
 [core]
     autocrlf = true
 [alias]
+    bclean = "!f() { git branch --merged ${1-master_Vnext} | grep -v " ${1-master_Vnext}$" | xargs -r git branch -d; }; f"
     ca = commit --amend
     co = "!f(){ git checkout $1; }; f"
     cob = "!f(){ git checkout -b $1; }; f"
@@ -17,10 +18,12 @@
     merged-branches = "!f(){ git branch --merged $1; }; f"
     mnff = "!f(){ git merge --no-ff $1; }; f"
     non-merged-branches = "!f(){ git branch --no-merged $1; }; f"
+    pr = "!f(){ git checkout -b $1 origin/$1; }; f"
     ra = rebase --abort
     rc = rebase --continue
-    rhm = reset --hard origin/master
     rh = "!f(){ git reset --hard; git clean -f; }; f"
+    rhm = reset --hard origin/master
+    rho = "!f(){ git reset --hard origin/$1; git clean -f; }; f"
     ru = remote update --prune
     st = status
     standup = log --pretty=format:'%C(yellow)%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday

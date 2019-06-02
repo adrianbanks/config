@@ -41,7 +41,7 @@
 [help]
     autocorrect = 1
 [rebase]
-	autoStash = true    
+    autoStash = true    
 [color]
     ui = 1
 [merge]

@@ -1,18 +1,18 @@
 [user]
     name = Adrian Banks
     email = 
+    signingkey = 
 [core]
     autocrlf = true
-    ignorecase = true
 [alias]
-    bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+    bclean = "!f() { git branch --merged ${1-origin/main} | grep -v " ${1-main}$" | xargs -r git branch -d; }; f"
     ca = commit --amend
     co = "!f(){ git checkout $1; }; f"
     cob = "!f(){ git checkout -b $1; }; f"
-    com = checkout master
+    com = checkout main
     graph-branch-view = -c core.pager='less -SRF' log --pretty=oneline --abbrev-commit --branches=* --graph --decorate --all --date-order
     graph-with-time-ago = -c core.pager='less -SRF' log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-    graph-message-on-separate-line = -c core.pager='less -SRF' log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+    graph-message-on-separate-line = -c core.pager='less -SRF' log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''                    %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
     locate = "!f(){ git branch --all --contains $1; }; f"
     locate-tag = "!f(){ git tag --contains $1; }; f"
     ma = merge --abort
@@ -23,14 +23,14 @@
     ra = rebase --abort
     rc = rebase --continue
     rh = "!f(){ git reset --hard; git clean -f; }; f"
-    rhm = reset --hard origin/master
     rho = "!f(){ git reset --hard origin/$1; git clean -f; }; f"
-    ru = remote update --prune
+    rhm = reset --hard origin/main
+    ru = "!f(){ git remote update --prune; }; f"
     st = status
     standup = log --pretty=format:'%C(yellow)%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday
     statis = status
     su = submodule update --init --recursive
-    uncommit =  reset --soft HEAD^
+    uncommit =    reset --soft HEAD^
     whereis = "!f(){ git branch --all --contains $1; }; f"
 [diff]
     ignoreSubmodules = dirty
@@ -41,11 +41,15 @@
     autoupdate = true
 [help]
     autocorrect = 1
-[rebase]
-    autoStash = true    
 [color]
     ui = 1
 [merge]
     tool = kdiff3
-[init]
-    defaultBranch = main
+[commit]
+    gpgsign = true
+[credential]
+    helper = manager
+[gpg]
+    program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
+[rebase]
+    autoStash = true

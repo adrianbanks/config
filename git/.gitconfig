@@ -30,7 +30,8 @@
     standup = log --pretty=format:'%C(yellow)%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday
     statis = status
     su = submodule update --init --recursive
-    uncommit =    reset --soft HEAD^
+    uncommit = reset --soft HEAD^
+    upstream = "!f() { git branch --set-upstream-to origin/${1}; }; f"
     whereis = "!f(){ git branch --all --contains $1; }; f"
 [diff]
     ignoreSubmodules = dirty

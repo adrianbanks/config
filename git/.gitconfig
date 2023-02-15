@@ -25,6 +25,7 @@
     rh = "!f(){ git reset --hard; git clean -f; }; f"
     rho = "!f(){ git reset --hard origin/$1; git clean -f; }; f"
     rhm = reset --hard origin/main
+    rom = rebase -i origin/main
     ru = "!f(){ git remote update --prune; }; f"
     st = status
     standup = log --pretty=format:'%C(yellow)%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday

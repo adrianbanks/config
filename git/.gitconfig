@@ -7,6 +7,7 @@
 [alias]
     bclean = "!f() { git branch --merged ${1-origin/main} | grep -v " ${1-main}$" | xargs -r git branch -d; }; f"
     ca = commit --amend
+    ch = config --list --show-origin
     co = "!f(){ git checkout $1; }; f"
     cob = "!f(){ git checkout -b $1; }; f"
     com = checkout main

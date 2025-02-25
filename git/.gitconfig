@@ -4,6 +4,10 @@
     signingkey = 
 [core]
     autocrlf = true
+[core]
+	  autocrlf = true
+[init]
+    defaultBranch = main
 [alias]
     bclean = "!f() { git branch --merged ${1-origin/main} | grep -v " ${1-main}$" | xargs -r git branch -d; }; f"
     ca = commit --amend
@@ -36,6 +40,8 @@
     up = "!f() { git ru; git rhm; git bclean; }; f"
     upstream = "!f() { git branch --set-upstream-to origin/${1}; }; f"
     whereis = "!f(){ git branch --all --contains $1; }; f"
+[branch]
+    sort = -committerdate
 [diff]
     ignoreSubmodules = dirty
     tool = kdiff3
@@ -51,10 +57,14 @@
     tool = kdiff3
 [commit]
     gpgsign = true
+[rebase]
+    autoStash = true
+    updateRefs = true
+[push]
+    autoSetupRemote = true
+[pull]
+    rebase = true
 [credential]
     helper = manager
 [gpg]
     program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
-[rebase]
-    autoStash = true
-    updateRefs = true

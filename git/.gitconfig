@@ -26,7 +26,7 @@
     non-merged-branches = "!f(){ git branch --no-merged $1; }; f"
     pr = "!f(){ git checkout -b $1 origin/$1; }; f"
     ra = rebase --abort
-    rc = rebase --continue
+    rc = "!f(){ git add .; git rebase --continue; }; f"
     rh = "!f(){ git reset --hard; git clean -f; }; f"
     rho = "!f(){ git reset --hard origin/$1; git clean -f; }; f"
     rhm = reset --hard origin/main

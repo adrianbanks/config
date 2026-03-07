@@ -4,8 +4,6 @@
     signingkey = 
 [core]
     autocrlf = true
-[core]
-	  autocrlf = true
 [init]
     defaultBranch = main
 [alias]
@@ -66,5 +64,3 @@
     rebase = true
 [credential]
     helper = manager
-[gpg]
-    program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe

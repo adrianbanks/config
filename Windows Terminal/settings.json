@@ -1,0 +1,280 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": "paste",
+            "id": "User.paste"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{c03ddc55-dbf6-4af1-8f0a-55a761490884}",
+    "firstWindowPreference": "persistedWindowLayout",
+    "keybindings": 
+    [
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": {},
+        "list": 
+        [
+            {
+                "colorScheme": "Campbell",
+                "commandline": "pwsh.exe -nologo",
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font"
+                },
+                "guid": "{c03ddc55-dbf6-4af1-8f0a-55a761490884}",
+                "hidden": false,
+                "name": "Anonymize (Windows PowerShell 7)",
+                "startingDirectory": "D:\\code\\redgate\\TDM\\Anonymization"
+            },
+            {
+                "colorScheme": "Campbell",
+                "commandline": "pwsh.exe -nologo",
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font"
+                },
+                "guid": "{50f039df-59df-41e2-8372-11a3128b7bb7}",
+                "hidden": false,
+                "name": "Subset (Windows PowerShell 7)",
+                "startingDirectory": "D:\\code\\redgate\\TDM\\Subsetting"
+            },
+            {
+                "colorScheme": "Campbell",
+                "commandline": "pwsh.exe -nologo",
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font"
+                },
+                "guid": "{999389f0-5874-4724-a840-1afa144636b1}",
+                "hidden": false,
+                "name": "TDM Hub (Windows PowerShell 7)",
+                "startingDirectory": "D:\\code\\redgate\\TDM_Web\\repo"
+            },
+            {
+                "colorScheme": "Campbell",
+                "commandline": "pwsh.exe -nologo",
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font"
+                },
+                "guid": "{5d6b4843-dc75-48d0-963c-9bb71f3d1b1d}",
+                "hidden": false,
+                "name": "Provision (Windows PowerShell 7)",
+                "startingDirectory": "D:\\code\\redgate\\Provision"
+            },
+            {
+                "colorScheme": "Campbell",
+                "commandline": "pwsh.exe -nologo",
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font"
+                },
+                "guid": "{46be68c6-620d-488a-97e4-4438453094f4}",
+                "hidden": false,
+                "name": "Data Masker (Windows PowerShell 7)",
+                "startingDirectory": "D:\\code\\redgate\\data-masking"
+            },
+            {
+                "colorScheme": "Campbell",
+                "commandline": "pwsh.exe -nologo",
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font"
+                },
+                "guid": "{8a788f72-e113-45f5-a48a-a849975de577}",
+                "hidden": false,
+                "name": "SQL Data Catalog (Windows PowerShell 7)",
+                "startingDirectory": "D:\\code\\redgate\\SQLDataCatalog"
+            },
+            {
+                "colorScheme": "Campbell",
+                "commandline": "pwsh.exe -nologo",
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font"
+                },
+                "guid": "{4327642a-de2a-4a6c-beaa-dbac9e15dfa0}",
+                "hidden": false,
+                "name": "SQL Prompt (Windows PowerShell 7)",
+                "startingDirectory": "D:\\code\\redgate\\SQLPrompt"
+            },
+            {
+                "colorScheme": "Campbell",
+                "commandline": "pwsh.exe -nologo",
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font"
+                },
+                "guid": "{605e9750-5024-498c-a52e-f18910925116}",
+                "hidden": false,
+                "name": "Blog (Windows PowerShell 7)",
+                "startingDirectory": "D:\\code\\adrianbanks\\adrianbanks.github.io"
+            },
+            {
+                "colorScheme": "Campbell",
+                "commandline": "powershell.exe -nologo",
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font"
+                },
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell 5",
+                "startingDirectory": "D:\\code\\redgate\\SQLPrompt"
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu 20.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b203f31f-3575-5e2f-919c-6d0d5407d4fc}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{62f97f06-b391-5fb9-93de-d6e1d3296ff9}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{9386a653-df7b-5121-b228-780ab081782f}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{741e3823-9ebf-5f6f-b8f4-fbdd151c2f9a}",
+                "hidden": true,
+                "name": "Developer PowerShell for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
+            },
+            {
+                "guid": "{17bf3de4-5353-5709-bcf9-835bd952a95e}",
+                "hidden": true,
+                "name": "Ubuntu-22.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}",
+                "hidden": false,
+                "name": "Ubuntu 22.04.5 LTS",
+                "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{424327ae-faa2-591a-bb50-8fcdff9b8ebf}",
+                "hidden": false,
+                "name": "rancher-desktop",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{a6dec07c-2807-5075-96a3-2d442776c91e}",
+                "hidden": false,
+                "name": "rancher-desktop",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{f2859dc7-fd39-5124-97c7-e6b1227bb69a}",
+                "hidden": false,
+                "name": "rancher-desktop",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{7ef8e55c-1a8b-5e4a-a1a3-1eef4365a667}",
+                "hidden": false,
+                "name": "rancher-desktop",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{5ac06e71-868e-58ae-a259-4ae71b0c894f}",
+                "hidden": false,
+                "name": "rancher-desktop",
+                "source": "Microsoft.WSL"
+            }
+        ]
+    },
+    "schemes": [],
+    "themes": [],
+    "useAcrylicInTabRow": true
+}

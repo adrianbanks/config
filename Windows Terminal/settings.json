@@ -97,7 +97,7 @@
                 "guid": "{999389f0-5874-4724-a840-1afa144636b1}",
                 "hidden": false,
                 "name": "TDM Hub (Windows PowerShell 7)",
-                "startingDirectory": "D:\\code\\redgate\\TDM_Web\\repo"
+                "startingDirectory": "D:\\code\\redgate\\TDM\\TDM_Hub"
             },
             {
                 "colorScheme": "Campbell",
@@ -109,7 +109,7 @@
                 "guid": "{5d6b4843-dc75-48d0-963c-9bb71f3d1b1d}",
                 "hidden": false,
                 "name": "Provision (Windows PowerShell 7)",
-                "startingDirectory": "D:\\code\\redgate\\Provision"
+                "startingDirectory": "D:\\code\\redgate\\TDM\\Provision"
             },
             {
                 "colorScheme": "Campbell",
@@ -169,7 +169,7 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell 5",
-                "startingDirectory": "D:\\code\\redgate\\SQLPrompt"
+                "startingDirectory": "D:\\code"
             },
             {
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
@@ -277,4 +277,5 @@
     "schemes": [],
     "themes": [],
     "useAcrylicInTabRow": true
+
 }

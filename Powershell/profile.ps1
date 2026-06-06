@@ -1,4 +1,5 @@
 Import-Module posh-git
+$env:POSH_GIT_ENABLED = $true
 
 oh-my-posh init pwsh --config ~/.ohmyposh/ANB.omp.json | Invoke-Expression
 

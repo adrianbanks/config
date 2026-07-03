@@ -8,6 +8,7 @@ ALTER DATABASE Masking_Chinook SET SINGLE_USER WITH ROLLBACK IMMEDIATE
 ALTER DATABASE Masking_Contoso SET SINGLE_USER WITH ROLLBACK IMMEDIATE
 ALTER DATABASE Masking_BigSchoolDB SET SINGLE_USER WITH ROLLBACK IMMEDIATE
 ALTER DATABASE Masking_BiggerSchoolDB SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+ALTER DATABASE Masking_Validation SET SINGLE_USER WITH ROLLBACK IMMEDIATE
 
 
 DROP DATABASE IF EXISTS Masking_AdventureWorks
@@ -20,6 +21,7 @@ DROP DATABASE IF EXISTS Masking_Chinook
 DROP DATABASE IF EXISTS Masking_Contoso
 DROP DATABASE IF EXISTS Masking_BigSchoolDB
 DROP DATABASE IF EXISTS Masking_BiggerSchoolDB
+DROP DATABASE IF EXISTS Masking_Validation
 
 
 RESTORE DATABASE Masking_AdventureWorks
@@ -94,4 +96,11 @@ FROM DISK = 'D:\SQLServer\Backups\BiggerSchoolDB.bak'
 WITH
     MOVE 'BiggerSchoolDB' TO 'D:\SQLServer\Data\Masking_BiggerSchoolDB.mdf',
     MOVE 'BiggerSchoolDB_log' TO 'D:\SQLServer\Logs\Masking_BiggerSchoolDB.ldf',
+    REPLACE;
+
+RESTORE DATABASE Masking_Validation
+FROM DISK = 'D:\SQLServer\Backups\Masking\Masking_Validation.bak'
+WITH
+    MOVE 'Masking_Validation' TO 'D:\SQLServer\Data\Masking_Validation.mdf',
+    MOVE 'Masking_Validation_log' TO 'D:\SQLServer\Logs\Masking_Validation.ldf',
     REPLACE;
